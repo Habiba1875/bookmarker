@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="bookmark.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Bookmarker</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Bookmarker</h1>
+    <hr class="bt-dashed mt-5">
+    <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+        class="fa-solid fa-bookmark"></i></h2>
+    <div class="mt-5 px-4">
+      <div class="mb-3 ">
+        <label for="siteName" class="form-label"> <i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+        <input type="text" class="form-control" oninput="validation()" id="siteName" placeholder="Bookmark Name">
+      </div>
+      <div class="mb-3">
+        <label for="siteURL" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+        <input type="text" id="siteURL" class="form-control" placeholder="Website URL">
+      </div>
+      <div class="mt-4 text-center"><button type="submit" class="btn btn-green" onclick="addSite()">Submit</button>
+      </div>
+    </div>
+    <hr class="bt-dashed my-5">
+    <div class="text-center" id="tableContent">
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
